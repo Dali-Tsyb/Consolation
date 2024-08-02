@@ -1,5 +1,5 @@
 <script setup>
-import { inject} from "vue";
+import { inject } from "vue";
 
 import CartList from "./CartList.vue";
 
@@ -9,7 +9,6 @@ defineProps({
 });
 
 const { totalPrice, emptyCart } = inject("cart");
-
 </script>
 
 <template>
@@ -40,7 +39,11 @@ const { totalPrice, emptyCart } = inject("cart");
          <div class="cart-bottom-total">
             <span>ИТОГО:</span><span> {{ totalPrice }} руб.</span>
          </div>
-         <button class="cart-bottom-button" @click="emptyCart" :disabled="!totalPrice">
+         <button
+            class="cart-bottom-button"
+            @click="emptyCart"
+            :disabled="!totalPrice"
+         >
             ОФОРМИТЬ ЗАКАЗ
          </button>
       </div>
@@ -111,6 +114,7 @@ const { totalPrice, emptyCart } = inject("cart");
 }
 .cart-middle-scroll {
    overflow-y: auto;
+   overflow-x: hidden;
    position: relative;
    height: 60vh;
 }
