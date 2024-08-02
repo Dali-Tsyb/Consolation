@@ -1,0 +1,22 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html,
+body {
+   overflow-x: hidden !important;
+   background: #fafafa;
+}
+@font-face {
+   font-family: MissKatherine;
+   src: url(/fonts/Miss_Katherine_Cyrillic_Script-Dn3sX6Pu.ttf);
+}
+@font-face {
+   font-family: Montserrat;
+   src: url(/fonts/Montserrat-Light-B2AMok7S.ttf);
+}
+@font-face {
+   font-family: ZtChablis;
+   src: url(/fonts/ZtChablisBold-CyTDU-At.ttf);
+}
