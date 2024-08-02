@@ -6,11 +6,32 @@ defineProps({
 function scrollToBottom() {
    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
 }
+const words = [
+   "Люблю тебя, мой милый!",
+   "У тебя обязательно все будет хорошо",
+   "Я очень сильно соскучилась",
+   "Ты такой красивый, вот бы видеть тебя как можно чаще",
+   "Я так хочу тебя обнять :(",
+   "Я думаю о тебе почти 24/7..",
+   "Ты самый лучший мальчик на свете <3",
+   "Завидую всем кто видит тебя каждый день:(",
+   "Я всегда буду рядом с тобой, котенок",
+   "Улыбнись!!",
+   "Ты - лучик света",
+   "Мне так сильно тебя не хватает",
+   "Кто прочитал тому запрещается меня игнорить >:(",
+   "Я никогда не чувствовала к кому-то так много, поэтому не хочу тебя терять никогда :(",
+   "Трудные времена создают сильных котят",
+   "Не вешай нос, любимый, у тебя все получится! (И даже если нет - я все равно буду с тобой)",
+];
+function loveYou() {
+   alert(words[Math.floor(Math.random() * words.length)]);
+}
 </script>
 
 <template>
    <div class="header">
-      <div class="header-logo">CONSOLATION</div>
+      <div @click="loveYou" class="header-logo">CONSOLATION</div>
       <div class="header-menu">
          <div @click="scrollToAbout" class="header-menu-about">О НАС</div>
          <div @click="scrollToBottom" class="header-menu-contacts">
